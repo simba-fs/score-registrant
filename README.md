@@ -3,5 +3,5 @@
  
 By [simba-fs](https://github.com/simba-fs)
 
-# Licence
-[MIT](./LICENCE)
+# License
+[MIT](./LICENSE)

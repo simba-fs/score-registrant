@@ -17,7 +17,11 @@ function generate(){
 	let data = new Array(num).fill(0);
 	for(let i of tmpData){
 		if(i[0] > num || i[0] <= 0){
-			alert('座號有問題');
+			alert(`座號 ${i[0]} 有問題`);
+			return;
+		}
+		if(data[i[0]-1] !== 0){
+			alert(`座號 ${i[0]} 有重複`);
 			return;
 		}
 		data[i[0]-1] = i[1];

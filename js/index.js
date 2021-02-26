@@ -2,15 +2,16 @@ console.log('index.js loaded');
 
 let $raw = $('#score');
 let $table = $('#table');
-let num = parseInt($('#num').val());
 
 $table.children().remove();
 
 function generate(){
+	let num = parseInt($('#num').val());
 	$table.children().remove();
 	let tmpData = $raw.val()
 		.split('\n')
-		.map(i => i.split(' ')
+		.filter(i => i.trim())
+		.map(i => i.trim().split(' ')
 			.map(i => parseInt(i))
 		)
 		.sort((a, b) => a[0] > b[0]);

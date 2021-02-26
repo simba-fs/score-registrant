@@ -3,7 +3,7 @@
  
 By [simba-fs](https://github.com/simba-fs)
 
-[網站](https://simba-fs.github.io/score-registrant/)
+[https://simba-fs.github.io/score](https://simba-fs.github.io/score)
 
 # License
 [MIT](./LICENSE)
